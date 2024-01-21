@@ -1,0 +1,27 @@
+/** @format */
+
+:root {
+  --bg-color: #0f0f10;
+  --story-text-color: #fff;
+  --chapter-color: #c9ab84;
+  --choice-box-bg: linear-gradient(0deg, #151a30, #242c50);
+  --icon-color: #dfe2ff;
+  --inventory-color: #1b213d;
+  --story-choice: 0px 20px;
+  --story-choice-radius: 7px;
+  --story-text-font: "Forum";
+  --story-text-size: 20px;
+  --story-w-container: 700px;
+  --chapter-font: "Cinzel Decorative";
+  --chapter-font-size: 40px;
+  --choice-box-width: 48px;
+  --choice-box-height: 40px;
+  --choice-box-margin: 10px;
+  --choice-box-padding: 24px 20px;
+  --choice-box-border: 10px;
+  --choice-text-size: 14px;
+  --button-color: #532d0a;
+  --button-padding: 10px;
+  --button-font-size: 20px;
+  --button-font: "Forum";
+}
