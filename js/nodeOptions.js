@@ -1,13 +1,16 @@
 /** @format */
 import { createElement } from "./jsHelperFunctions/createElement.js";
+import { typeWriter } from "./js-animation/typewriter.js";
 
 import { chapter_1 } from "./storyData.js";
 
 export function updateText(nodeNumber) {
   const newText = chapter_1[nodeNumber].text;
-  document.getElementById("storyText").innerText = newText;
-
-  updateOptions(chapter_1[nodeNumber].options);
+  const storyTextElement = document.getElementById("storyText");
+  storyTextElement.innerText ="";
+  typeWriter(newText);
+  updateOptions(chapter_1[nodeNumber].options, newText);
+  
 }
 
 function updateOptions(options) {

@@ -1,4 +1,5 @@
-/** @format */
+
+
 import { createElement } from "./jsHelperFunctions/createElement.js";
 import { updateText } from "./nodeOptions.js";
 
@@ -30,6 +31,7 @@ export function createGameInterface() {
   container.appendChild(choiceContainer);
 
   main.appendChild(container);
+
 
   updateText(1);
 }

@@ -42,6 +42,9 @@ main {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .chapter-title {
@@ -51,7 +54,7 @@ main {
 }
 
 .story-text {
-  max-width: var(--story-w-container);
+  width: var(--story-w-container);
   font-size: var(--story-text-size);
   font-family: var(--story-font);
   font-weight: var(--story-font-weight);
