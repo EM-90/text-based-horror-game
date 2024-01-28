@@ -7,5 +7,5 @@ export function typeWriter(text, i = 0) {
         return;
     }
 
-    setTimeout(() => typeWriter(text, i + 1), 50 );
+    setTimeout(() => typeWriter(text, i + 1), 30 );
 }
