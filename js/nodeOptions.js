@@ -1,6 +1,7 @@
 /** @format */
 import { createElement } from "./jsHelperFunctions/createElement.js";
 import { typeWriter } from "./js-animation/typewriter.js";
+import { showChoices } from "./js-animation/typewriter.js";
 
 import { chapter_1 } from "./storyData.js";
 
@@ -8,8 +9,9 @@ export function updateText(nodeNumber) {
   const newText = chapter_1[nodeNumber].text;
   const storyTextElement = document.getElementById("storyText");
   storyTextElement.innerText ="";
-  typeWriter(newText);
+  typeWriter(newText,0, showChoices);
   updateOptions(chapter_1[nodeNumber].options, newText);
+  
   
 }
 
@@ -26,7 +28,9 @@ function updateOptions(options) {
       {}
     );
     choiceBox.addEventListener("click", function () {
+      showChoices();  
       updateText(option.node);
+     
     });
     choiceContainer.appendChild(choiceBox);
   });

@@ -61,8 +61,16 @@ main {
   color: var(--story-text-color);
 }
 
-.choice-container {
-  display: flex;
+.choice-container  {
+  display: none;
+  
+}
+
+/*--------------hidden*/
+
+
+.choice-container-visible {
+  display:flex;
   flex-direction: column;
   gap: 10px;
 }
