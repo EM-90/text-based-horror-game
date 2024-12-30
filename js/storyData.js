@@ -1,5 +1,6 @@
 /** @format */
 
+import { gameItem } from "./gameItems.js";
 export const chapter_1 = {
   // Waking up in the dark
 
@@ -27,20 +28,21 @@ export const chapter_1 = {
 
   3: {
     text: "it is not far to the other side of the room, i guess it is three or four square feet. I can feel the wall, but i cant see anything",
-    options: [{ node: 4, choice: "Search through pockets" },]
+    options: [{ node: 4, choice: "Search through pockets" }],
     //Option 4: Search through your pockets
   },
 
   4: {
     text: "As i search through my pockets i notice that i dont have my phone on me, but in my jacketpocket i find a old zippo lighter that was a gift from Elise, i dont smoke anymore, but i need vision, so this is exactly what i need",
     // Option 5: use zippo lighter
-    options: [{ node: 5, choice: "Use zippo lighter" },]
+
+    options: [{ node: 5, image: gameItem.lighter }],
   },
 
   5: {
     text: "the flame from the lighter reveals the small room made of stone and concret, in front of me i see an old wooden door, but it is not fully closed",
     // Option 6: exit the room through the wooden door
-    options: [{ node: 6, choice: "Exit the room through the wooden door" },]
+    options: [{ node: 6, choice: "Exit the room through the wooden door" }],
   },
 
   6: {

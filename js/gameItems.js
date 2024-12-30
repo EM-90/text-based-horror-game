@@ -1,7 +1,5 @@
 /** @format */
 
-// gameItems.js
-
 export const gameItem = {
   // weapons
   gun: { src: "../game-assets/weapons/pistol-gun.png", alt: "a gun" },
