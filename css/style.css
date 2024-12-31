@@ -7,6 +7,7 @@
 body {
   background-color: var(--bg-color);
   box-sizing: border-box;
+  position: relative;
 }
 
 nav {
@@ -20,6 +21,7 @@ nav li {
   outline: 1px solid #4c300f;
   list-style: none;
   border-radius: 5px;
+  z-index: 100;
 }
 
 nav li:hover {
@@ -125,4 +127,22 @@ main {
 .story-choice:hover {
   outline: 2px solid #3721a5;
   background-color: #190f4c;
+}
+
+/*-------Modal and menu classes------*/
+
+.inventory-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: var(--story-w-container);
+  height: 30rem;
+  position: absolute;
+  top: 50px;
+  border-radius: var(--story-choice-radius);
+}
+
+.hidden {
+  display: none;
 }

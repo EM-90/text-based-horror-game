@@ -2,6 +2,7 @@
 
 import { createElement } from "./jsHelperFunctions/createElement.js";
 import { updateText } from "./nodeOptions.js";
+import { inventoryBtn } from "./item-inventory/InventoryButton.js";
 
 export function createGameInterface() {
   const main = document.querySelector("main");
@@ -32,5 +33,6 @@ export function createGameInterface() {
 
   main.appendChild(container);
 
+  inventoryBtn();
   updateText(1);
 }
